@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EstateLink Pro - The modern real estate platform connecting buyers, sellers, and investors. Find homes, land, and office spaces with ease.">
+    <meta property="og:title" content="EstateLink Pro | Buy, Rent & Lease Property">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0056b3">
+    <title>EstateLink Pro | Buy, Rent & Lease Property</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/api.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <nav id="main-nav" aria-label="Main Navigation"></nav>
+
+    <main>
+        <header class="hero">
+            <h1>Find Your Perfect Space</h1>
+            <p>Buy, Rent, or Lease properties with seamless financial support.</p>
+            <div class="search-bar" style="background: white; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; width: 90%; max-width: 600px; display: flex; gap: 10px;">
+                <input type="search" placeholder="Search by location, property type..." style="flex: 1; margin: 0;" aria-label="Search properties">
+                <button type="button" class="btn btn-call" style="padding: 0 1.5rem;">Search</button>
+            </div>
+        </header>
+
+        <section class="container" style="padding: 3rem 5%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2>Featured Listings</h2>
+                <a href="buy.html" style="color: var(--primary); font-weight: 600; text-decoration: none;">View All &rarr;</a>
+            </div>
+            <div id="listing-grid" class="grid">
+                <!-- Dynamic Content injected via app.js -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
